@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+import HeroRoadmap from "@components/HeroRoadmap";
+import Milestones from "@components/Milestones";
+import RegisterRoadmap from "@components/RegisterRoadmap";
 
 export default function Home() {
 	return (
@@ -11,6 +14,12 @@ export default function Home() {
 			</Head>
 
 			<Header title="RoadMap" />
+
+			<HeroRoadmap />
+
+			<Milestones />
+
+			<RegisterRoadmap />
 
 			<Footer />
 		</div>

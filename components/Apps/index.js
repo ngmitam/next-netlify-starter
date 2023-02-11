@@ -4,7 +4,7 @@ export default function Apps() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.background}></div>
-			<div className={styles.container}>
+			<div className={styles.container + " container"}>
 				<div className={styles.info}>
 					<div className={styles.title}>
 						Apps that Can
