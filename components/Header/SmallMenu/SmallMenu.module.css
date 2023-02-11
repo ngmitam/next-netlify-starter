@@ -1,0 +1,68 @@
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	background: white;
+}
+
+.hamburger {
+	flex: 1;
+	height: 24px;
+}
+
+.logo {
+	flex: 1;
+	text-align: center;
+}
+
+.active {
+	display: flex !important;
+}
+
+.menu {
+	position: fixed;
+	top: 52px;
+	width: 100%;
+	background: white;
+	margin-left: -16px;
+	z-index: 10;
+	padding: 16px;
+	display: none;
+	flex-direction: column;
+	gap: 32px;
+	font-family: Gordita;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;
+	box-shadow: #959da533 0 15px 16px;
+}
+
+.menu_item {
+	position: relative;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.menu_item_active::before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 16px);
+	height: 6px;
+	left: -8px;
+	bottom: -5px;
+	background: #0f4fe1;
+	opacity: 0.4;
+}
+
+.social_media {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+	align-self: center;
+	cursor: pointer;
+}
