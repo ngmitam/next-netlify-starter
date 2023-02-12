@@ -1,5 +1,6 @@
 .milestones {
 	position: relative;
+	margin-bottom: -130px;
 }
 .milestone {
 	display: flex;
@@ -97,68 +98,132 @@
 	position: relative;
 }
 
+.connect_first > .start_point {
+	position: absolute;
+	top: -312px;
+	left: -12px;
+	height: 24px;
+	width: 24px;
+}
+
 .line_left_first {
 	content: "";
 	position: absolute;
 	top: -300px;
-	left: -24px;
+	left: -36px;
 	height: 500px;
-	width: 20px;
+	width: 32px;
 	border-color: #0f4fe1;
 	border-style: dashed;
 	border-width: 2px 0 2px 2px;
 	border-radius: 12px 0 0 12px;
+}
+
+.connect_first > .end_point {
+	position: absolute;
+	bottom: -212px;
+	left: -12px;
+	height: 24px;
+	width: 24px;
 }
 
 .connect_second {
 	position: relative;
 }
 
+.connect_second > .start_point {
+	position: absolute;
+	top: -162px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
+}
+
 .line_right_second {
 	content: "";
 	position: absolute;
 	top: -150px;
-	right: -24px;
+	right: -36px;
 	height: 350px;
-	width: 20px;
+	width: 32px;
 	border-color: #0f4fe1;
 	border-style: dashed;
 	border-width: 2px 2px 2px 0;
 	border-radius: 0 12px 12px 0;
+}
+
+.connect_second > .end_point {
+	position: absolute;
+	bottom: -212px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
 }
 
 .connect_third {
 	position: relative;
 }
 
+.connect_third > .start_point {
+	position: absolute;
+	top: -162px;
+	left: -12px;
+	height: 24px;
+	width: 24px;
+}
+
 .line_left_third {
 	content: "";
 	position: absolute;
 	top: -150px;
-	left: -24px;
+	left: -36px;
 	height: 350px;
-	width: 20px;
+	width: 32px;
 	border-color: #0f4fe1;
 	border-style: dashed;
 	border-width: 2px 0 2px 2px;
 	border-radius: 12px 0 0 12px;
 }
 
+.connect_third > .end_point {
+	position: absolute;
+	bottom: -212px;
+	left: -12px;
+	height: 24px;
+	width: 24px;
+}
+
 .connect_fourth {
 	position: relative;
+}
+
+.connect_fourth > .start_point {
+	position: absolute;
+	top: -162px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
 }
 
 .line_right_fourth {
 	content: "";
 	position: absolute;
 	top: -150px;
-	right: -24px;
+	right: -36px;
 	height: 350px;
-	width: 20px;
+	width: 32px;
 	border-color: #0f4fe1;
 	border-style: dashed;
 	border-width: 2px 2px 2px 0;
 	border-radius: 0 12px 12px 0;
+}
+
+.connect_fourth > .end_point {
+	position: absolute;
+	bottom: -212px;
+	right: -12px;
+	height: 24px;
+	width: 24px;
 }
 
 .connect_end {
@@ -166,9 +231,18 @@
 	width: 100%;
 }
 
+.connect_end > .start_point {
+	position: absolute;
+	top: -12px;
+	left: 12px;
+	height: 24px;
+	width: 24px;
+}
+
 .line_end {
 	content: "";
 	position: absolute;
+	top: 12px;
 	left: 24px;
 	height: 48px;
 	width: calc(25%);
@@ -181,7 +255,7 @@
 .end {
 	content: "";
 	position: absolute;
-	top: 46px;
+	top: 58px;
 	left: calc(25% + 24px);
 	height: 48px;
 	width: calc(25% - 24px);
@@ -191,23 +265,19 @@
 	border-radius: 0 12px 0 0;
 }
 
+.connect_end > .end_point {
+	position: absolute;
+	top: 82px;
+	left: calc(50% - 24px);
+	height: 48px;
+	width: 48px;
+}
+
 @media (max-width: 576px) {
-	.connect_first {
-		display: none;
-	}
-
-	.connect_second {
-		display: none;
-	}
-
-	.connect_third {
-		display: none;
-	}
-
-	.connect_fourth {
-		display: none;
-	}
-
+	.connect_first,
+	.connect_second,
+	.connect_third,
+	.connect_fourth,
 	.connect_end {
 		display: none;
 	}

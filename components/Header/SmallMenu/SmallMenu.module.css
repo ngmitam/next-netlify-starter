@@ -16,6 +16,12 @@
 	text-align: center;
 }
 
+@media (max-width: 576px) {
+	.logo {
+		display: none;
+	}
+}
+
 .active {
 	display: flex !important;
 }
@@ -31,7 +37,6 @@
 	display: none;
 	flex-direction: column;
 	gap: 32px;
-	font-family: Gordita;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;

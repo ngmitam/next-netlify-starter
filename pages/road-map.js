@@ -15,13 +15,15 @@ export default function Home() {
 
 			<Header title="RoadMap" />
 
-			<HeroRoadmap />
+			<div className="content">
+				<HeroRoadmap />
 
-			<Milestones />
+				<Milestones />
 
-			<RegisterRoadmap />
+				<RegisterRoadmap />
 
-			<Footer />
+				<Footer />
+			</div>
 		</div>
 	);
 }

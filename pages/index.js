@@ -21,29 +21,31 @@ export default function Home() {
 
 			<Header title="Home" />
 
-			<Hero />
+			<div className="content">
+				<Hero />
 
-			<Feature />
+				<Feature />
 
-			<Register />
+				<Register />
 
-			<div className="container">
-				<Chain />
+				<div className="container">
+					<Chain />
 
-				<Decentralize />
+					<Decentralize />
 
-				<CrossChain />
+					<CrossChain />
 
-				<PrivateTransaction />
+					<PrivateTransaction />
+				</div>
+
+				<Apps />
+
+				<Faq />
+
+				<Register />
+
+				<Footer />
 			</div>
-
-			<Apps />
-
-			<Faq />
-
-			<Register />
-
-			<Footer />
 		</div>
 	);
 }

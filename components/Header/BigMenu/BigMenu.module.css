@@ -6,6 +6,7 @@
 	padding: 1rem 2rem;
 	width: 100%;
 	flex: 1;
+	gap: 5rem;
 }
 
 .logo,
@@ -18,15 +19,15 @@
 }
 
 .menu,
-.button_group,
-.social_media {
+.button_group {
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;
+	flex: 1;
+	gap: 2rem;
 }
 
 .menu_item {
-	padding: 0 2rem;
 	position: relative;
 	cursor: pointer;
 }
@@ -34,18 +35,19 @@
 .menu_item_active::before {
 	content: "";
 	position: absolute;
-	width: calc(100%);
+	width: calc(100% + 8px);
 	height: 6px;
 	left: -4px;
 	bottom: -5px;
 	background: #0f4fe1;
 	opacity: 0.4;
 }
+
 .social_media {
 	flex: 1;
 	padding: 0.5rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	gap: 12px;
 	cursor: pointer;
@@ -53,8 +55,8 @@
 .button {
 	flex: 1;
 	border-radius: 24px;
-	border: 2px solid #0f4fe1;
+	border: 1px solid #0f4fe1;
 	color: #0f4fe1;
-	padding: 0.5rem 4rem;
+	padding: 0.5rem;
 	cursor: pointer;
 }

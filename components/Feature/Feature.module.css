@@ -1,14 +1,16 @@
 .features {
 	width: 100%;
+	margin-top: 130px;
 }
 
 .row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
 	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	width: 100%;
-	padding: 0 2rem;
-	margin-top: 180px;
+	flex-wrap: wrap;
+	margin-top: calc(-1 * var(--bs-gutter-y));
+	margin-right: calc(-0.5 * var(--bs-gutter-x));
+	margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
 .feature {

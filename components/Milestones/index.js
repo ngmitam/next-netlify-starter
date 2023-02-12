@@ -28,9 +28,19 @@ export default function Milestones() {
 				</div>
 			</div>
 			<div className={styles.connect_first}>
+				<img
+					className={styles.start_point}
+					src="/point.svg"
+					alt="point"
+				/>
 				<div className={styles.line_left_first}></div>
+				<img
+					className={styles.end_point}
+					src="/point.svg"
+					alt="point"
+				/>
 			</div>
-			<div class={styles.milestone + " " + styles.second}>
+			<div className={styles.milestone + " " + styles.second}>
 				<img
 					className={styles.image}
 					src="/roadmaptrustless.svg"
@@ -52,7 +62,17 @@ export default function Milestones() {
 				</div>
 			</div>
 			<div className={styles.connect_second}>
+				<img
+					className={styles.start_point}
+					src="/point.svg"
+					alt="point"
+				/>
 				<div className={styles.line_right_second}></div>
+				<img
+					className={styles.end_point}
+					src="/point.svg"
+					alt="point"
+				/>
 			</div>
 			<div class={styles.milestone + " " + styles.third}>
 				<img
@@ -80,7 +100,17 @@ export default function Milestones() {
 				</div>
 			</div>
 			<div className={styles.connect_third}>
+				<img
+					className={styles.start_point}
+					src="/point.svg"
+					alt="point"
+				/>
 				<div className={styles.line_left_third}></div>
+				<img
+					className={styles.end_point}
+					src="/point.svg"
+					alt="point"
+				/>
 			</div>
 			<div class={styles.milestone + " " + styles.fourth}>
 				<img
@@ -102,7 +132,17 @@ export default function Milestones() {
 				</div>
 			</div>
 			<div className={styles.connect_fourth}>
+				<img
+					className={styles.start_point}
+					src="/point.svg"
+					alt="point"
+				/>
 				<div className={styles.line_right_fourth}></div>
+				<img
+					className={styles.end_point}
+					src="/point.svg"
+					alt="point"
+				/>
 			</div>
 			<div class={styles.milestone + " " + styles.fifth}>
 				<img
@@ -126,8 +166,14 @@ export default function Milestones() {
 				</div>
 			</div>
 			<div className={styles.connect_end}>
+				<img
+					className={styles.start_point}
+					src="/point.svg"
+					alt="point"
+				/>
 				<div className={styles.line_end}></div>
 				<div className={styles.end}></div>
+				<img className={styles.end_point} src="/down.svg" alt="point" />
 			</div>
 		</div>
 	);
